@@ -10,8 +10,8 @@ window.onscroll = function () {
 };
 
 // Evento para mostrar imagen en dialogo
-$(document).on('click', '.openImgDialog', function () {
-  const imgPath = $(this).data('id');
-  console.log(`Obteniendo path de img ${imgPath} para mostrar en modal`);
-  $('.modal-body #imageModal').attr('src', imgPath);
+$(document).on('click', '.openImgDialog', e => {
+  const imgSrc = e.target.src;
+  console.log(`Obteniendo path de img ${imgSrc} para mostrar en modal`);
+  $('.modal-body #imageModal').attr('src', imgSrc);
 });
