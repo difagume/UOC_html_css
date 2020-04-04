@@ -1,5 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+:root {
+  --fondo: #004966;
+  /* --fondo-oscuro: rgba(69, 141, 209, 0.5);
+  --fondo-claro: rgba(69, 141, 209, 0.2);
+  --texto: #1f1f11; */
+  --claro: #CBD5E0;
+  /* --contraste: #D9645D; */
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
 body {
-  height: 100vh;
-  color: #1f1f1f;
-  background: linear-gradient(to bottom, #bada55, #c0ffee);
+  background-color: var(--fondo);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230b6a90' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%231e89b3' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%233ca2ca' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%2374b0c7' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23a4c1cd' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23cdd6da' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  /* background by SVGBackgrounds.com */
+}
+
+h1 {
+  font-size: calc(1.8rem + 2.5vw);
+}
+
+h2 {
+  font-size: calc(1.2rem + 1.6vw);
+}
+
+article {
+  padding: 20px;
+}
+
+pre {
+  padding: 1rem;
+  background: #ecf8ff;
+  border-radius: 8px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.text-muted {
+  color: var(--claro) !important;
+}
+
+.active {
+  color: white !important;
+}
+
+.header {
+  border-bottom: 1px solid var(--claro);
+}
+
+.nav-scroller .nav>a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
+.jumbotron {
+  background-color: #ffffff2e;
+}
+
+.card {
+  border: none;
+}
+
+.list-group-item.active {
+  background-color: #1e89b3;
+  border-color: #1e89b3;
+}
+
+.footer {
+  flex-shrink: none;
+  padding: 1rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+
+.flotante {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: rgba(123, 123, 123, 0.59);
 }

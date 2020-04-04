@@ -1,7 +1,7 @@
 {
-  "name": "parcel",
+  "name": "pec1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pec1 - Diego Guzmán",
   "main": "index.js",
   "scripts": {
     "parcel:dev": "parcel index.html",
