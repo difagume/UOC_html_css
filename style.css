@@ -2,11 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 :root {
   --fondo: #004966;
-  /* --fondo-oscuro: rgba(69, 141, 209, 0.5);
-  --fondo-claro: rgba(69, 141, 209, 0.2);
-  --texto: #1f1f11; */
   --claro: #CBD5E0;
-  /* --contraste: #D9645D; */
 }
 
 html, body {
@@ -37,6 +33,14 @@ h1 {
 
 h2 {
   font-size: calc(1.2rem + 1.6vw);
+}
+
+h3 {
+  font-size: calc(1rem + 1.2vw);
+}
+
+h4 {
+  font-size: calc(0.9rem + 0.8vw);
 }
 
 article {
@@ -77,12 +81,24 @@ code {
 }
 
 .card {
-  border: none;
+  border-radius: 8px;
+}
+
+.lst-contenido {
+  border-radius: 0px;
 }
 
 .list-group-item.active {
-  background-color: #1e89b3;
+  background-color: #1e89b38f;
   border-color: #1e89b3;
+}
+
+.img-65 {
+  max-width: 65%;
+}
+
+.img-65:hover {
+  background-color: rgba(63, 182, 24, 0.15);
 }
 
 .footer {
@@ -99,5 +115,5 @@ code {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  color: rgba(123, 123, 123, 0.59);
+  color: rgba(123, 123, 123, 0.77);
 }
