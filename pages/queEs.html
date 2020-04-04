@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name='description' content='Empezando con el componente Prisma'>
+  <meta name='description' content='¿Qué es Prisma?'>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="../favicon.ico" />
-  <title>empezando con Prisma</title>
+  <title>¿Qué es Prisma?</title>
 
   <!-- Bootswatch css -->
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css" rel="stylesheet"
@@ -30,8 +30,8 @@
 
       <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between font-weight-bold">
-          <a class="p-2 text-muted active" href="">Empezando</a>
-          <a class="p-2 text-muted" href="entendiendo.html">Entendiendo Prisma</a>
+          <a class="p-2 text-muted" href="empezando.html">Empezando</a>
+          <a class="p-2 text-muted active" href="entendiendo.html">Entendiendo Prisma</a>
         </nav>
       </div>
 
@@ -42,11 +42,14 @@
         <div class="lst-contenido card">
           <div class="card-body p-2">
             <div class="list-group">
-              <a href="inicioRapido.html" class="list-group-item list-group-item-action">
-                <i class="fas fa-rocket"></i> Inicio rápido
+              <a href="" class="list-group-item list-group-item-action active">
+                <i class="far fa-question-circle"></i> ¿Qué es Prisma?
               </a>
-              <a href="preparar.html" class="list-group-item list-group-item-action">
-                <i class="fas fa-cogs"></i> Preparar Prisma
+              <a href="comoFunciona.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-code"></i> ¿Cómo funciona Prisma?
+              </a>
+              <a href="flujos.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-stream"></i> Flujos de trabajo típicos de Prisma
               </a>
             </div>
           </div>
@@ -56,11 +59,25 @@
       <div class="card mt-5 mb-5">
         <div class="card-body">
           <article>
-            <h2>Visión general</h2>
-            <p>Esta página explica cómo comenzar a usar <a lang="en" href="https://github.com/prisma/prisma"
-                target="_blank">Prisma</a> en cinco minutos. Aprenderá cómo enviar consultas a una
-              base de datos SQL en un script <strong>TypeScript</strong> simple usando <a lang="en"
-                href="https://github.com/prisma/prisma-client-js" target="_blank">Prisma Client</a>.</p>
+            <h2>¿Qué es prisma?</h2>
+            <p>Prisma es un kit de herramientas de base de datos de código abierto. Se compone principalmente de las
+              siguientes partes:</p>
+            <ul>
+              <li><strong lang="en">Prisma Client:</strong> generador de consultas autogenerado y seguro para Node.js y
+                TypeScript</li>
+              <li><strong lang="en">Prisma Migrate</strong> ( experimental ): sistema de migración y modelado de datos
+                declarativos</li>
+              <li><strong lang="en">Prisma Studio</strong> ( experimental ): <abbr
+                  title="Interfaz gráfica de usuario">GUI</abbr> para ver y editar datos en su base de datos</li>
+            </ul>
+            <p><span lang="en">Prisma Client</span> se puede usar en cualquier aplicación de <span
+                lang="en">backend</span> Node.js o TypeScript (incluidas las aplicaciones sin servidor y los
+              microservicios). Puede ser una <abbr title="Interfaz de programación de aplicaciones">API</abbr> <abbr
+                title="Transferencia de Estado Representacional">REST</abbr>, una
+              <abbr title="Interfaz de programación de aplicaciones">API</abbr> GraphQL, una <abbr
+                title="Interfaz de programación de aplicaciones">API</abbr> <abbr
+                title="sistema de llamada a procedimiento remoto">gRPC</abbr> o cualquier otra cosa que
+              necesite una base de datos.</p>
           </article>
         </div>
       </div>
