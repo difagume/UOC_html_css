@@ -102,7 +102,6 @@ code {
 }
 
 .footer {
-  flex-shrink: none;
   padding: 1rem 0;
   color: #999;
   text-align: center;
