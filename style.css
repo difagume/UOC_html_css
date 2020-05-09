@@ -116,3 +116,13 @@ code {
   right: 15px;
   color: rgba(123, 123, 123, 0.77);
 }
+
+.logo-right {
+  max-width: 100px;
+}
+
+@media screen and (max-width: 476px) {
+  .logo-right {
+    max-width: 70px;
+  }
+}
