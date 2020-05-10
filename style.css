@@ -43,6 +43,11 @@ h4 {
   font-size: calc(0.9rem + 0.8vw);
 }
 
+text {
+  font-size: calc(4rem + 4vw);
+  font-weight: bold;
+}
+
 article {
   padding: 20px;
 }
@@ -107,6 +112,23 @@ code {
   text-align: center;
   background-color: #f9f9f9;
   border-top: .05rem solid #e5e5e5;
+}
+
+.footer-title {
+  clip-path: url(#svgPath);
+  -webkit-clip-path: url(#svgPath);
+  position: relative;
+  top: -15px;
+}
+
+.footer img {
+  max-width: 100%;
+}
+
+.footer svg {
+  display: block;
+  margin: auto;
+  padding: 0;
 }
 
 .flotante {
