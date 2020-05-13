@@ -58,6 +58,12 @@ pre {
   border-radius: 8px;
   width: 100%;
   white-space: pre-wrap;
+  transition: background-color 0.5s ease-out;
+}
+
+pre:hover {
+  background-color: rgb(133, 216, 168);
+  transition-duration: 1s;
 }
 
 code {
