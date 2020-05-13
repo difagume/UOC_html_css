@@ -76,7 +76,7 @@ code {
   border-bottom: 1px solid var(--claro);
 }
 
-.nav-scroller .nav>a:hover {
+.nav-scroller .nav a:hover {
   color: white !important;
   text-decoration: none;
 }
