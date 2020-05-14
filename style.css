@@ -128,6 +128,15 @@ code {
   animation: float 4s ease-in-out infinite;
 }
 
+.img-gray {
+  transition: filter .7s ease-in-out;
+  filter: grayscale(1) blur(2px);
+}
+
+.img-gray:hover {
+  filter: grayscale(0);
+}
+
 .footer {
   padding: 1rem 0;
   color: #999;
