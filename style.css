@@ -82,11 +82,6 @@ code {
   border-bottom: 1px solid var(--claro);
 }
 
-.nav-scroller .nav a:hover {
-  color: white !important;
-  text-decoration: none;
-}
-
 .jumbotron {
   background-color: #ffffff2e;
 }
@@ -178,6 +173,53 @@ code {
   width: 25px;
   height: 25px;
   animation: heartbeat 1s infinite;
+}
+
+.nav-scroller>.nav a, .nav-scroller>.nav a:visited, .nav-scroller>.nav a:hover, .nav-scroller>.nav a:active {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  transition: 0.5s color ease;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-scroller>.nav a:hover {
+  color: white !important;
+}
+
+.nav-scroller>.nav a.before:before, .nav-scroller>.nav a.after:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.nav-scroller>.nav a.before:before {
+  top: 6px;
+}
+
+.nav-scroller>.nav a.after:after {
+  bottom: 4px;
+}
+
+.nav-scroller>.nav a.before:before, .nav-scroller>.nav a.after:after {
+  height: 2px;
+  width: 0;
+  background: white;
+}
+
+.nav-scroller>.nav a:before {
+  right: 0;
+}
+
+.nav-scroller>.nav a:after {
+  left: 0;
+}
+
+.nav-scroller>.nav a.before:hover:before, .nav-scroller>.nav a.after:hover:after {
+  width: 100%;
 }
 
 @media screen and (max-width: 476px) {
