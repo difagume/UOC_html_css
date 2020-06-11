@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="../assets/bootswatch/bootstrap.min.css">
   </noscript>
   <!-- Font Awesome -->
-  <script defer src="https://kit.fontawesome.com/44b6a6bb73.js" crossorigin="anonymous"></script>
+  <link rel="preload" href="../assets/fontawesome/css/font-awesome.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="../assets/fontawesome/css/font-awesome.min.css">
+  </noscript>
   <!-- Hoja de estilos -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -63,10 +67,10 @@
           <div class="card-body p-2">
             <div class="list-group">
               <a href="inicioRapido.html" class="list-group-item list-group-item-action">
-                <i class="fas fa-rocket"></i> Inicio rápido
+                <i class="fa fa-rocket"></i> Inicio rápido
               </a>
               <a href="" class="list-group-item list-group-item-action active">
-                <i class="fas fa-cogs"></i> Preparar Prisma
+                <i class="fa fa-cogs"></i> Preparar Prisma
               </a>
             </div>
           </div>

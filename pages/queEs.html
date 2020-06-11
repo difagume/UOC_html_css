@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="../assets/bootswatch/bootstrap.min.css">
   </noscript>
   <!-- Font Awesome -->
-  <script defer src="https://kit.fontawesome.com/44b6a6bb73.js" crossorigin="anonymous"></script>
+  <link rel="preload" href="../assets/fontawesome/css/font-awesome.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="../assets/fontawesome/css/font-awesome.min.css">
+  </noscript>
   <!-- Hoja de estilos -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -64,13 +68,13 @@
           <div class="card-body p-2">
             <div class="list-group">
               <a href="" class="list-group-item list-group-item-action active">
-                <i class="far fa-question-circle"></i> ¿Qué es Prisma?
+                <i class="fa fa-question-circle"></i> ¿Qué es Prisma?
               </a>
               <a href="comoFunciona.html" class="list-group-item list-group-item-action">
-                <i class="fas fa-code"></i> ¿Cómo funciona Prisma?
+                <i class="fa fa-code"></i> ¿Cómo funciona Prisma?
               </a>
               <a href="flujos.html" class="list-group-item list-group-item-action">
-                <i class="fas fa-stream"></i> Flujos de trabajo típicos de Prisma
+                <i class="fa fa-exchange"></i> Flujos de trabajo típicos de Prisma
               </a>
             </div>
           </div>
