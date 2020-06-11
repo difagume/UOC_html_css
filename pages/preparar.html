@@ -9,12 +9,19 @@
   <title>inicio rápido con Prisma</title>
 
   <!-- Bootswatch css -->
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-qdQEsAI45WFCO5QwXBelBe1rR9Nwiss4rGEqiszC+9olH1ScrLrMQr1KmDR964uZ" crossorigin="anonymous">
+  <link rel="preload" href="../assets/bootswatch/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="../assets/bootswatch/bootstrap.min.css">
+  </noscript>
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/44b6a6bb73.js" crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/44b6a6bb73.js" crossorigin="anonymous"></script>
   <!-- Hoja de estilos -->
-  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="../style.css">
+  </noscript>
 </head>
 
 <body class="d-flex flex-column">
@@ -71,7 +78,7 @@
           <article>
             <h2>Preparar Prisma</h2>
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0RhtQgIs-TE"
+              <iframe loading="lazy" class="embed-responsive-item" src="https://www.youtube.com/embed/0RhtQgIs-TE"
                 allowfullscreen></iframe>
             </div>
           </article>
@@ -132,7 +139,7 @@ npm install @prisma/cli typescript ts-node @types/node --save-dev</code></pre>
           </article>
           <article>
             <h2>Conecta tu base de datos</h2>
-            <img class="img-thumbnail rounded mb-4 img-gray" src="../assets/dbs.png" alt="flujo">
+            <img class="lazyload img-thumbnail rounded mb-4 img-gray" src="../assets/dbs.png" alt="flujo">
             <p>Para conectar su base de datos, debe establecer el campo url del bloque datasource en su esquema Prisma a
               la <abbr title="Localizador Uniforme de Recursos">URL</abbr> de conexión de su base de datos :</p>
             <pre><code>datasource postgresql {
@@ -168,7 +175,7 @@ npm install @prisma/cli typescript ts-node @types/node --save-dev</code></pre>
     </svg>
 
     <div>
-      <img class="footer-title" src="../assets/footer-background.jpg" alt="">
+      <img class="lazyload footer-title" src="../assets/footer-background.jpg" alt="">
     </div>
 
     <p>&copy; 2020 <a href="mailto:dfguzman@uoc.edu.ec" target="_blank" rel="noopener">Diego Guzmán Medrano</a>.
@@ -177,7 +184,7 @@ npm install @prisma/cli typescript ts-node @types/node --save-dev</code></pre>
   </footer>
 
   <!-- Bootstrap scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -185,9 +192,12 @@ npm install @prisma/cli typescript ts-node @types/node --save-dev</code></pre>
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <!-- Scripts de usario -->
-  <script src="../index.js"></script>
+  <script defer src="../index.js"></script>
+  <!-- Carga diferida de imagenes -->
+  <script src="../assets/lazysizes.min.js" async></script>
+</body>
 </body>
 
 </html>
